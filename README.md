@@ -1,2 +1,2 @@
 # webdev-pucpr
-projeto semestral
+projeto semestral Loraine e Anderson (BCC)
