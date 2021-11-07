@@ -1,2 +1,2 @@
 # webdev-pucpr
-projeto semestral Loraine e Anderson (BCC)
+projeto semestral Loraine F. Mendes e Anderson Alves dos Santos(BCC)
