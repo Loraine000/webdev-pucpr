@@ -1,0 +1,837 @@
+
+
+
+.cabecalho{
+  color: #333333;
+  
+  font-size: 14.7px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  text-align: center;
+  margin:1.5;
+  right:20px;
+  bottom: 2px;
+  top: 0%;
+}
+
+
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	
+	}
+
+#container {
+	margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  
+  font-weight:lighter;
+  
+  
+}
+
+.menuicone{
+  float: right;
+  display: inline;
+
+}
+.fa-icones-menu{
+  background-color: aquamarine;
+}
+
+p {
+	text-align: center;
+}
+
+nav {
+  background-color: #333333;  
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #333333;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:18px;
+	line-height: 60px;
+  font-weight: bolder;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #928d8d65;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:270px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' \25BD'; }
+li > a:only-child:after { content: ''; }
+
+/* Navbar container */
+
+
+
+
+
+.fundo{
+  background-color: #f1f2f6;
+  background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+}
+
+
+/*----------------------------------------CARDS------------------------------------------------------------*/
+.div-cards-pagina{
+  display: flex;
+  position:relative;
+  align-items: center;
+  left:0px;
+  right:0px;
+  top: 4px;
+  bottom: 32px;
+  width: auto;
+  height: 532px;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+  clear: both;
+ 
+  
+}
+.div-card{
+  background:#4d4c4c;
+   
+  /*border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-top: 20px;
+  /*box-shadow: rgba(255, 166, 1, 0.596) 3px 4px 8px;*/
+  
+  display:inline-block;
+  padding:5px;
+  margin: 27px;
+  
+  border-radius:10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: -0.9px -0.9px 0.9px 0.9px rgba(255, 255, 255, 0.376), 0.9px 0.9px 0.9px 0.9px rgba(243, 203, 246, 0.376);
+  -webkit-transition: .25s step-start 0s;
+  -moz-transition: .25s step-start 0s;
+  transition: .25s step-start 0s
+
+ 
+}
+
+.div-card:hover{
+  /*padding-left: 10px;
+  padding-right: 10px;*/
+  
+  
+  
+  /*box-shadow: rgba(255, 166, 1, 0.596) 3px 4px 8px;*/
+  background:#333333;
+  display:inline-block;
+  padding:9px;
+  /*margin: 10px;*/
+  border-radius:12px;
+  
+  
+  box-shadow: 0px 0px 1px 2px rgba(1, 196, 255, 0.685);
+  
+  transition: ease-in 0.2s;
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+
+ 
+}
+
+
+  
+
+.div-card-img img{
+  margin: 0 auto;
+  width: 85px;
+  height: 270px;
+  width: 100%;
+  max-width: 990px;
+  justify-content: center;
+  display: block;
+  overflow:visible;
+  
+
+
+  
+}
+
+
+
+
+.div-card-descricao{
+
+  background-color:#e7e6eb;
+  color: black;
+  font-weight:lighter;
+  font-size: 16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  text-align: center;
+  padding:10px;
+  padding-bottom: 15px;
+
+
+  
+}
+
+.div-card-comprar{
+  
+  
+  background-color:#333333; 
+  cursor: pointer;
+  color: white;
+  font-weight:lighter;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  text-align: center;
+  
+  padding: 12px;
+  /*box-shadow: 0px 1px 20px 0.2px rgba(1, 217, 255, 0.685);*/
+  box-shadow: 0px 0px 1px 2px rgba(1, 196, 255, 0.685);
+  transition: ease-out 0.2s;
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+}
+
+
+.div-card-comprar:hover{
+  
+  
+  background-color:#333333; 
+  cursor: pointer;
+  color: white;
+  font-weight:lighter;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  text-align: center;
+  
+  padding: 12px;
+  /*box-shadow: 0px 1px 20px 0.2px rgba(1, 217, 255, 0.685);*/
+
+}
+
+
+.produto-comprado{
+  background: rgba(255, 255, 255, 0.376);
+  box-shadow: 0px -2px 8px 1px rgba(24, 24, 24, 0.685);
+  transition: ease-out 0.2s;
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+}
+
+
+.produto-comprado:hover{
+  background: rgba(255, 255, 255, 0.376);
+  box-shadow: 0px -2px 8px 1px rgba(255, 255, 255, 0.376);
+  transition: ease-out 0.2s;
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+}
+
+
+/*--------------------------------------FIM DAS CARDS-------------------------*/
+/*-------------------------------INICIO DO BOTAO + PRODUTOS-----------------*/
+html,
+*,
+*:before,
+*:after {
+  margin: 0pt; 
+  padding: 0pt;
+  box-sizing: border-box;
+  
+}
+
+.content-pad {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  
+  flex-direction: row;
+  
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.376);
+  cursor:cell;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  float:center;
+  right:42%;
+  left: 45%;
+  margin-top:-25px;
+  
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg,#00c3ff,#00c3ff,#0084ff,#1100ff,#8000ff,#2500ff,#008fff,#00c3ff,#00c3ff);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: auto;
+  z-index: -1;
+  filter: blur(2px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 2.3s normal;
+  animation-duration: 50s;
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  border-radius: 10px;
+  
+}
+
+.glow-on-hover:active {
+  color: rgba(255, 255, 255, 0.376)
+  
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/*-------------------------------FIM DO BOTAO + PRODUTOS-----------------*/
+
+.diferencial{
+  display: flex;
+  position:relative;
+  align-items: center;
+  left:0px;
+  right:0px;
+  top: 4px;
+  bottom: 32px;
+  width: auto;
+  height: 532px;
+  padding-left: 150px;
+  padding-right: 150px;
+  
+  clear: both;
+  
+}
+
+.div-texto-diferencial{
+  height: 200px;
+  width: 900px;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+  text-align: center;
+  padding-left: 100px;
+  }
+
+h1{
+  margin-top:0px;
+  font-size: 34px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: bold;
+  text-align:left;
+
+}
+
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+  line-height: 1.4;
+
+  font-size: 20px;
+  
+  text-align: left;
+  text-align-last:left;
+  text-justify: inter-word;
+  max-width: 67ch;
+}
+
+.div-video-produtos1{
+  background-color:#F2B138;
+  width:100%;
+  float:left;
+  width: 800px;
+  height: 415px;
+  text-align:center;
+  
+
+}
+div.sub, iframe {
+  
+  position:relative;
+  align-items: center;
+  align-content: center;
+  left:500px;
+  right:500px;
+  top: 4px;
+  bottom: 32px;
+  width: 800px;
+  height: 415px;
+  margin: 0 auto;
+  background-color: #777;
+ 
+}
+
+
+.corpo-index{
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.video-container{
+  height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+}
+
+
+
+
+
+
+
+
+
+/*----------------------INICIO DEPOIMENTOS----------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #444;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+}
+
+.front,
+.back{
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  border-radius: 10px;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.back{
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+
+.front:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.front .inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front .inner span{
+  color: rgba(255,255,255,0.7);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+/*----------------------FIM DEPOIMENTOS----------------------*/
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+  margin-right: 200px;
+  margin-left:200px;
+}
+
+.endereco{
+  width: 100%;
+  display: block;
+  display:contents;
+  position: absolute;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60%;
+  padding-right: 100%;
+  
+  display: block;
+}
+
+.map-responsive{
+
+  overflow:hidden;
+align-items: center;
+
+  padding-bottom:56.25%;
+
+  position:absolute;
+
+  height:90.2%;
+  align-items: center;
+
+  width:97.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 10%;
+  
+  
+  display: block;
+  
+
+}
+
+.map-responsive iframe{
+
+  left:0px;
+    top:0;
+
+  height:50%;
+  align-items: center;
+
+  width:50%;
+  margin-left: 17%;
+  
+  position:absolute;
+  display:block;
+}
+
+
+
+h1{
+  font-size: 26px;
+  color: rgb(46, 45, 45);
+  
+  
+}
+
+#social #containerSOC {
+  text-align: center;  
+}
+
+
+
+#menuicone{
+  text-align: right;
+  display: inline;
+  float: right;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 90px;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  text-decoration: none;
+  float: center;
+
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  color: #0069e2;
+  font-size: 60px;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-linkedin {
+  
+  color: rgb(46, 45, 45);
+  
+  
+  
+}
+
+/* Twitter */
+.fa-twitter {
+  
+  color: rgb(46, 45, 45);
+}
+
+/* Twitter */
+.fa-skype {
+  
+  color: rgb(46, 45, 45);
+}
+
+/* Twitter */
+.fa-instagram {
+  
+  color: rgb(46, 45, 45);
+  
+}
+
+
+.botao-cadastro-home{
+  width: 190px;
+  height: 72px;
+  font-size: 21px;
+  cursor:pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  float:center;
+  right:42%;
+  left: 45%;
+  background-color: #d9d9d9;
+background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+}
+.botao-cadastro-home:hover{
+  background-color: #9cdaf8;
+background-image: linear-gradient(315deg, #9cdaf8 0%, #98fcbd 74%);
+
+}
+
+
+.div-cadastro{
+  background-color: #aee1f9;
+  background-image: linear-gradient(315deg, #aee1f9 0%, #f6ebe6 74%);
+  text-align: center;
+  padding-top: 50px;
+  color: black;
+}
+
+
+.botao-cadastro{
+  background-color: #4c77af5e; /* Green */
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
